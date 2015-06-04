@@ -8,9 +8,14 @@
 
      <title>Robert Pallas</title>
 
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+     <link href="./font/font-mfizz.css" rel="stylesheet">
+     <link href="./font/fontcustom.css" rel="stylesheet">
+
      <style type="text/css">
         * { margin: 0; padding: 0; }
-        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        body { font: 14px Verdana, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
         .clear { clear: both; }
         #page-wrap { width: 800px; margin: 40px auto 60px; }
         #pic { 
@@ -23,30 +28,39 @@
             -moz-border-radius: 10px;
             border-radius: 10px;
         }
-        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
-        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
-        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
-        p { margin: 0 0 16px 0; }
-        p span, li span { font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 32px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 8px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 14px; color: #999; font-weight: normal; }
+        p { 
+            margin: 0 0 16px 0; 
+            line-height: 1.6;
+            text-align: justify;
+        }
+        p span, li span { font-style: italic; font-family: Georgia, Serif; font-size: 14px; color: #999; font-weight: normal; }
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
         h2 a:hover, h2 a:active, h2 a:visited { text-decoration: none; }
         ul { margin: 0 0 32px 17px; }
+        ul.social {
+            list-style-type: none;
+            font-size: 18px;
+        }
+        ul.social li {
+            padding-bottom: 5px;
+        }
         #objective { width: 500px; float: left; }
         #objective p { 
             font-family: Georgia, Serif; 
             font-style: italic; 
             color: #666;
-            font-size: 24px; 
+            font-size: 16px; 
         }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dt { font-family: Georgia, Serif; font-style: italic; font-weight: bold; font-size: 16px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
+        table {width: 100%;}
+        table td {font-size: 18px;}
      </style>
-     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-     <link href="./font/font-mfizz.css" rel="stylesheet">
-     <link href="./font/fontcustom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -55,14 +69,8 @@
     
         <img src="https://s.gravatar.com/avatar/c084a44cf9d955731b376033f5d7347b?s=250"  alt="Robert Pallas" id="pic" />
     
-        <div id="contact-info" class="vcard">
-        
-            <h1 class="fn">Robert Pallas</h1>
-        
-            <p>
-                Phone: <span class="tel">+37258134999</span><br />
-                Email: <a class="email" href="mailto:robert@tri.ee">robert@tri.ee</a>
-            </p>
+        <div>
+            <h1>Robert Pallas</h1>
         </div>
                 
         <div id="objective">
@@ -86,16 +94,31 @@
             
                 <h2><i class="icon-python"></i> Python <span>Flask</span></h2>
 
-                <h2><i class="icon-database"></i> SQL <span><i class="icon-postgres-alt"></i> PostgreSQL <i class="icon-mysql"></i> MySQL</span></h2>
+                <h2><i class="icon-database"></i> SQL <span><i class="icon-postgres"></i> PostgreSQL <i class="icon-mysql-alt"></i> MySQL</span></h2>
 
                 <h2><i class="fa fa-linux"></i> Linux <span><i class="icon-ubuntu"></i> Ubuntu <i class="icon-centos"></i> CentOS <i class="icon-shell"></i> Bash</span></h2>
 
                 <h2><i class="fa fa-css3"></i> CSS <span>Bootstrap</span></h2>
 
-                <h3>
-                    <i class="fa fa-docker"></i> Docker <i class="icon-aws"></i> AWS <i class="icon-apache"></i> Apache <i class="icon-nginx-alt"></i> nginx <i class="icon-database-alt"></i> Memcached<br>  <i class="fa fa-code"></i> IntelliJ IDEA <i class="fa fa-apple"></i> Mac OS <i class="fa fa-windows"></i> Windows<br>
-                    <i class="fa fa-btc"></i> Bitcoin <i class="fa fa-git-square"></i> Git <i class="fa fa-html5"></i> HTML 
-                </h3>
+                <table>
+                    <tr>
+                        <td><i class="fa fa-docker"></i> Docker</td>
+                        <td><i class="icon-aws"></i> AWS</td>
+                        <td><i class="icon-apache"></i> Apache</td>
+                        <td><i class="icon-nginx-alt"></i> nginx</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-git-square"></i> Git</td>
+                        <td><i class="icon-database-alt"></i> NoSQL</td>
+                        <td><i class="fa fa-html5"></i> HTML</td>
+                        <td><i class="fa fa-btc"></i> Bitcoin</td>
+                    </tr>  
+                    <tr>
+                        <td><i class="fa fa-code"></i> IntelliJ IDEA</td>
+                        <td><i class="fa fa-apple"></i> Mac OS</td>
+                        <td><i class="fa fa-windows"></i> Windows</td>
+                    </tr> 
+                </table>
             </dd>
             
             <dd class="clear"></dd>
@@ -120,7 +143,7 @@
             
             <dt>Education</dt>
             <dd>
-                <h2>Tallinn University of Technology - Cyber Security (MSc) <span>2010-2012</span></h2>
+                <h2>Tallinn University of Technology and Tartu University - Cyber Security (MSc) <span>2010-2012</span></h2>
                 <p>Thesis <a href="http://robertpallas.github.io/boblog/includes/btc-thesis.pdf" target="_blank">Bitcoin security</a></p>
                 <p>Modules/courses:</p>
                     <ul>
@@ -177,11 +200,14 @@
 
             <dt>Social</dt>
             <dd> 
-                <h2><a href="https://www.linkedin.com/pub/robert-pallas/87/637/a42" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></h2>
-                <h2><a href="https://github.com/robertpallas" target="_blank"><i class="fa fa-github-square"></i> Github</a></h2>
-                <h2><a href="https://www.codeschool.com/users/32701" target="_blank"><i class="fa fa-laptop"></i></i> Codeschool</a></h2>
-                <h2><a href="http://robertpallas.github.io/boblog/" target="_blank"><i class="fa fa-file-text-o"></i> Blog</a></h2>
-                <h2><a href="https://www.facebook.com/robert.pallas1" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></h2>
+                <ul class="social">
+                    <li><a href="mailto:robert@tri.ee" target="_blank"><i class="fa fa-envelope"></i> robert@tri.ee</a></li>
+                    <li><a href="https://www.linkedin.com/pub/robert-pallas/87/637/a42" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/robertpallas" target="_blank"><i class="fa fa-github-square"></i> Github</a></li>
+                    <li><a href="https://www.codeschool.com/users/32701" target="_blank"><i class="fa fa-laptop"></i></i> Codeschool</a></li>
+                    <li><a href="http://robertpallas.github.io/boblog/" target="_blank"><i class="fa fa-file-text-o"></i> Blog</a></li>
+                    <li><a href="https://www.facebook.com/robert.pallas1" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                </ul>
             </dd>
             
             <dd class="clear"></dd>
